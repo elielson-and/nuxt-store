@@ -3,20 +3,6 @@ const route = useRoute()
 </script>
 
 <template>
-  <header>
-    <NuxtLink to="/">NuxtStore</NuxtLink>
-    <ul>
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/about">About</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/products">Products</NuxtLink>
-      </li>
-    </ul>
-  </header>
   <div>
     <h1>Index Page</h1>
     <p>Current route: {{ route.path }}</p>
