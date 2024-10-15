@@ -1,3 +1,9 @@
+<script setup>
+definePageMeta({
+    layout: 'default'
+});
+</script>
+
 <template>
     <header>
         <NuxtLink to="/">NuxtStore</NuxtLink>
