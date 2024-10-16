@@ -9,6 +9,9 @@
 
 <script setup>
 
-const { data, error } = await useFetch('/api/handle?name=Test');
+const { data } = await useFetch('/api/handle?name=Test', {
+    method: 'post',
+    body: { age: 20 }
+});
 
 </script>

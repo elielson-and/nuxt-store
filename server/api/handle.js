@@ -1,7 +1,7 @@
-export default defineEventHandler((event) => {
+export default defineEventHandler(async (event) => {
   const { name } = getQuery(event);
-
+  const { age } = await readBody(event);
   return {
-    message: 'Query value from URL: ' + name
+    message: `Your are ${name}, and have ${age} years old.`
   };
 });
